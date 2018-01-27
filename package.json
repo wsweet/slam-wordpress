@@ -1,0 +1,14 @@
+{
+    "name": "slam-wordpress-theme",
+    "version": "1.0.0",
+    "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "node-sass sass/style.scss style.css -w"
+    },
+    "author": "Will Sweet",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^4.7.2"
+    }
+}
