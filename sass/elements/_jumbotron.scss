@@ -1,0 +1,17 @@
+#feature-banner {
+    background-image: linear-gradient(to right, rgba($color-primary, .4), rgba($color-secondary, .4)), url('/wordpress/wp-content/uploads/2018/02/nathalia-bariani-100947.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    height: 80vh;
+    padding-top: 30vh;
+    position: relative;
+    text-shadow: 0 0 1rem rgba($color-secondary, .6);
+    h1 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+}

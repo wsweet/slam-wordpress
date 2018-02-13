@@ -1,10 +1,27 @@
+$color-primary: #449C91;
+$color-primary_xlight: lighten($color-primary, 40%);
+$color-primary_light: lighten($color-primary, 20%);
+$color-primary_dark: darken($color-primary, 15%);
+$color-primary_xdark: darken($color-primary, 30%);
+$color-secondary: #274F6E;
+$color-secondary_xlight: lighten($color-secondary, 40%);
+$color-secondary_light: lighten($color-secondary, 20%);
+$color-secondary_dark: darken($color-secondary, 20%);
+$color-secondary_xdark: darken($color-secondary, 40%);
+$color-tertiary: #FBF3E6;
+$color-tertiary_dark: darken($color-tertiary, 20%);
+$color-tertiary_xdark: darken($color-tertiary, 40%);
+$color-grey: #afbac4;
+$color-grey_xlight: lighten($color-grey, 40%);
+$color-grey_light: lighten($color-grey, 20%);
+$color-grey_dark: darken($color-grey, 20%);
+$color-grey_xdark: darken($color-grey, 40%);
 $color__background-body: #fff;
 $color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
 $color__background-button: #e6e6e6;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
-
 $color__text-screen: #21759b;
 $color__text-input: #666;
 $color__text-input-focus: #111;
@@ -12,7 +29,6 @@ $color__link: royalblue;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
 $color__text-main: #404040;
-
 $color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;

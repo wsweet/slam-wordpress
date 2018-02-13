@@ -226,7 +226,7 @@ select,
 optgroup,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Cabin", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -234,10 +234,22 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
+html a:link, html a:visited {
+  color: #449C91;
+  text-decoration: none; }
+
+html a:hover, html a:focus, html a:active {
+  color: #2d675f;
+  text-decoration: underline;
+  transition: all .35s; }
+
 p {
   margin-bottom: 1.5em; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -248,7 +260,7 @@ address {
 
 pre {
   background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: "Cabin", Courier, monospace;
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6;
@@ -257,16 +269,21 @@ pre {
   overflow: auto;
   padding: 1.6em; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -328,6 +345,21 @@ figure {
 table {
   margin: 0 0 1.5em;
   width: 100%; }
+
+#feature-banner {
+  background-image: linear-gradient(to right, rgba(68, 156, 145, 0.4), rgba(39, 79, 110, 0.4)), url("/wordpress/wp-content/uploads/2018/02/nathalia-bariani-100947.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  height: 80vh;
+  padding-top: 30vh;
+  position: relative;
+  text-shadow: 0 0 1rem rgba(39, 79, 110, 0.6); }
+  #feature-banner h1 {
+    font-size: 3rem; }
+  #feature-banner p {
+    font-size: 1.4rem; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -423,70 +455,31 @@ a {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
-  .main-navigation ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 100%;
-      left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
+.navbar {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  padding: 2rem; }
+  .navbar .navbar-brand img {
+    max-height: 3rem; }
+  .navbar #navbarNav {
+    margin: .5rem; }
+    .navbar #navbarNav .menu-item {
+      list-style: none;
+      display: inline-block;
+      padding: .5rem;
+      margin: .5rem;
+      width: 100%;
+      text-align: center; }
+      .navbar #navbarNav .menu-item:hover {
+        background-color: white; }
+    .navbar #navbarNav #menu-primary {
+      margin: 0;
+      padding: 0; }
+  .navbar .navbar-toggler {
+    border: 0; }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
-
-@media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
-
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-  margin: 0 0 1.5em;
-  overflow: hidden; }
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%; }
+.admin-bar .fixed-top {
+  top: 32px; }
 
 /*--------------------------------------------------------------
 # Accessibility

@@ -44,7 +44,7 @@ if ( ! function_exists( 'slam_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'slam' ),
+			'main_menu' => esc_html__( 'Primary', 'slam' ),
 		) );
 
 		/*
@@ -117,7 +117,11 @@ add_action( 'widgets_init', 'slam_widgets_init' );
  * Enqueue scripts and styles.
  */
 function slam_scripts() {
-	wp_enqueue_style( 'slam-style', get_stylesheet_uri() );
+	wp_register_style( 'bootstrap-min', get_template_directory_uri() . '/assets/bootstrap.min.css' );
+    wp_register_style( 'slam-style', get_stylesheet_uri(), 'bootstrap-min' );
+    wp_enqueue_style( 'bootstrap-min' );
+    wp_enqueue_style( 'slam-style' );
+
 
 	wp_enqueue_script( 'slam-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
