@@ -347,7 +347,7 @@ table {
   width: 100%; }
 
 #feature-banner {
-  background-image: linear-gradient(to right, rgba(68, 156, 145, 0.4), rgba(39, 79, 110, 0.4)), url("/wordpress/wp-content/uploads/2018/02/nathalia-bariani-100947.jpg");
+  background-image: linear-gradient(to right, rgba(68, 156, 145, 0.4), rgba(39, 79, 110, 0.4)), url("../../uploads/2018/02/nathalia-bariani-100947.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

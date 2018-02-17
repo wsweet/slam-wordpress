@@ -19,7 +19,6 @@
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
-<!-- <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/assets/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/assets/bootstrap.min.js"></script>
 <?php wp_footer(); ?>

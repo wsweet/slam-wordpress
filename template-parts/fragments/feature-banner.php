@@ -1,3 +1,5 @@
+<?php $gradient = 'linear-gradient(to right, rgba($color-primary, .4), rgba($color-secondary, .4))'; ?>
+
 <div id="feature-banner" class="jumbotron jumbotron-fluid">
     <div class="container">
         <div class="row">
