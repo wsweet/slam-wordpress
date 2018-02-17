@@ -14,17 +14,9 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'slam' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'slam' ), 'WordPress' );
-			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'slam' ), 'slam', '<a href="http://underscores.me/">Will Sweet</a>' );
-			?>
-		</div><!-- .site-info -->
+		<div class="container text-center">
+			<p>	&copy; Sweet Life and Mortgage Limited, <?php echo date('Y');?>.</p>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 <!-- <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->

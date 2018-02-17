@@ -352,14 +352,56 @@ table {
   background-repeat: no-repeat;
   background-position: center;
   color: white;
-  height: 80vh;
-  padding-top: 30vh;
-  position: relative;
-  text-shadow: 0 0 1rem rgba(39, 79, 110, 0.6); }
+  min-height: 80vh;
+  padding-top: 25vh;
+  position: relative; }
   #feature-banner h1 {
-    font-size: 3rem; }
+    font-size: 3rem;
+    text-shadow: 0 0 1rem rgba(39, 79, 110, 0.6); }
   #feature-banner p {
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    text-shadow: 0 0 1rem rgba(39, 79, 110, 0.6); }
+  #feature-banner .banner-logo {
+    margin: 2rem auto 0 auto;
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 200px;
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.2));
+    border-radius: 100%;
+    box-shadow: 0 0 1rem rgba(39, 79, 110, 0.4); }
+
+@media (max-width: 768px) {
+  #feature-banner {
+    text-align: center;
+    padding-top: 0; }
+    #feature-banner .banner-logo {
+      max-width: 150px; } }
+
+a.btn {
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all .2s; }
+  a.btn.btn-clear-white {
+    border: 2px solid white; }
+  a.btn.btn-clear-green {
+    border: 2px solid #449C91; }
+  a.btn.btn-clear-lightgreen {
+    border: 2px solid #7fc7be; }
+  a.btn.btn-clear:hover, a.btn.btn-clear:focus {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), inset 0 0 1rem rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5); }
+  a.btn.btn-white {
+    background-color: white;
+    color: #449C91;
+    border: none; }
+    a.btn.btn-white:hover, a.btn.btn-white:focus {
+      box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+      background-image: linear-gradient(to bottom right, #7fc7be, #2d675f); }
+  a.btn:hover, a.btn:focus {
+    transform: scale(1.1); }
 
 /*--------------------------------------------------------------
 # Forms
@@ -456,30 +498,48 @@ a {
 ## Menus
 --------------------------------------------------------------*/
 .navbar {
-  background-color: rgba(255, 255, 255, 0.6);
+  position: relative;
   margin: 0;
-  padding: 2rem; }
-  .navbar .navbar-brand img {
-    max-height: 3rem; }
-  .navbar #navbarNav {
-    margin: .5rem; }
-    .navbar #navbarNav .menu-item {
-      list-style: none;
-      display: inline-block;
-      padding: .5rem;
-      margin: .5rem;
-      width: 100%;
-      text-align: center; }
-      .navbar #navbarNav .menu-item:hover {
-        background-color: white; }
-    .navbar #navbarNav #menu-primary {
-      margin: 0;
-      padding: 0; }
+  padding: 0;
+  transition: all .2s; }
+  .navbar .navbar-brand {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    min-width: 10rem;
+    margin: .5rem 0;
+    background-image: url("../../uploads/2018/02/Iman_sweetlifemort_crop2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top; }
+  .navbar #navbarNav .menu-item {
+    list-style: none;
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    width: 100%;
+    text-align: center;
+    transition: all .2s; }
+    .navbar #navbarNav .menu-item:hover {
+      background-color: #449C91;
+      box-shadow: inset 0 0 0.5rem rgba(0, 0, 0, 0.1); }
+      .navbar #navbarNav .menu-item:hover a {
+        color: white;
+        text-decoration: none;
+        text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1); }
+  .navbar #navbarNav #menu-primary {
+    margin: 0;
+    padding: 0; }
   .navbar .navbar-toggler {
     border: 0; }
 
 .admin-bar .fixed-top {
   top: 32px; }
+
+@media (min-width: 768px) {
+  .navbar .navbar-brand {
+    margin-left: 1.5rem;
+    background-position: center; } }
 
 /*--------------------------------------------------------------
 # Accessibility
